@@ -250,7 +250,7 @@ const terminalApp = (body) => {
         print(new Date().toString());
         break;
       case "uptime":
-        print(`up ${Math.floor((Date.now() - boot) / 60)} minutes`);
+        print(`up ${Math.floor((Date.now() - boot) / 60000)} minutes`);
         break;
       case "ls": {
         if (!guestCanAccess(arg ? path : CWD)) {
