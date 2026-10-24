@@ -324,7 +324,7 @@ const notesApp = (body) => {
     const showPreview = preview.style.display === "none";
     if (showPreview) preview.innerHTML = markdownToHtml(textarea.value);
     preview.style.display = showPreview ? "block" : "none";
-    textarea.style.display = showPreview ? "none" : "none";
+    textarea.style.display = showPreview ? "none" : "";
     previewButton.textContent = showPreview ? "Edit" : "Preview";
   });
 };
